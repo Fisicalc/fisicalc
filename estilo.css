@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+nav {
+    background-color: #ffd800;
+    height: 70px;
+}
+
+p#navFisicalc{
+    padding: 10px;
+    color: #fff;
+    font-family: bona nova;
+    font-size: 2em;
+    text-align: right;
+    margin-right: 60px;
+}
+
+section{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-gap: 10px
+}
+
+.ad {
+    height: 10px;
+	margin: 5px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.calculos {
+    height: 450px;
+    margin: 5px;
+	background: #fcffe8;
+	text-align: center;
+    font-size: 1.5em;
+    box-shadow: 3px 3px 5px grey;
+}
+
+div#spcBtnFormulas {
+    margin-top: 10px;
+}
+
+div#formulas{
+    background-color: gray;
+    border-style: solid;
+    border-color: black;
+    height: 200px;
+}
+
+.btnFormulas{
+    border: none;
+    color: white;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: bona nova;
+    font-size: 14px;
+   
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btnCinematica{
+    background: green;
+}
+
+#btnDinamica{
+    background: red;
+}
+
+footer#rodape{
+    background-color: #ccaa3f;
+    height: 200px;
+    margin-top: 15px;
+}

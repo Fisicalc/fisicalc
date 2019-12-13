@@ -1,0 +1,19 @@
+nav {
+    background-color: #ffd800;
+    height: 70px;
+}
+
+p#navFisicalc{
+    padding: 10px;
+    color: #fff;
+    font-family: bona nova;
+    font-size: 2em;
+    text-align: right;
+    margin-right: 60px;
+}
+
+footer#rodape{
+    background-color: #ccaa3f;
+    height: 200px;
+    margin-top: 15px;
+}
