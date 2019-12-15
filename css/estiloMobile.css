@@ -3,6 +3,66 @@ nav {
     height: 70px;
 }
 
+section#bloco{
+    display: block;
+}
+
+div#principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 9fr 2fr;
+}
+
+
+div#spcBtnFormulas {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    min-width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+
+}   
+
+.btnFormulas{
+    min-width: 125px;
+    margin: 5px;
+}
+
+div#calculos {
+    grid-row: 2/2;
+}
+
+div#ajuda{
+    margin-top: 20px;
+    grid-row: 3/3;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button#btnAjuda{
+    background-color: #F3D670;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-family: bona nova;
+    font-size: 22px;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+ 
+}
+
+div#formulas {
+    display: none;
+}
+
+.bannerLateral {
+    display: none;  
+}
+
 p#navFisicalc{
     padding: 10px;
     color: #fff;
