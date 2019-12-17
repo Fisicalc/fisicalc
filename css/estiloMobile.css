@@ -9,7 +9,6 @@ section#bloco{
 
 div#principal {
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: 2fr 9fr 2fr;
 }
 
@@ -19,10 +18,11 @@ div#spcBtnFormulas {
     grid-row: 1/1;
     min-width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     overflow-x: scroll;
     margin-bottom: 10px;
 
-}   
+}
 
 .btnFormulas{
     min-width: 125px;
@@ -41,7 +41,8 @@ div#ajuda{
     text-align: center;
 }
 
-button#btnAjuda{
+
+#btnAjuda{
     background-color: #F3D670;
     color: white;
     text-decoration: none;
