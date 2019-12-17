@@ -33,7 +33,7 @@ const dinamica = {
         }
     },
 
-    forcadeAtritoDinamico:{
+    forcaDeAtritoDinamico:{
         formula: "F_{AT}=\\mu_{din}N",
         
         metodo: function(coeficienteDeAtritoDinamico, forcaNormal){
@@ -41,7 +41,7 @@ const dinamica = {
         }
     },
 
-    forcadeAtritoEstatico:{
+    forcaDeAtritoEstatico:{
         formula: "F_{AT}=\\mu_{est}N",
         
         metodo: function(coeficienteDeAtritoEstático, forcaNormal){
