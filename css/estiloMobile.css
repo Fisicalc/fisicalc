@@ -1,3 +1,14 @@
+@charset "utf-8";
+
+html, body, h1{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face{
+    font-family: bona nova;
+    src: url(../fontes/bona_nova/Bona\ Nova\ Regular.otf);
+}
+
 nav {
     background-color: #ffd800;
     height: 70px;

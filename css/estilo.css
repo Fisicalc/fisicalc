@@ -1,12 +1,17 @@
 @charset "utf-8";
 
-html, body, h2{
+html, body, h1{
     margin: 0px;
     padding: 0px;
 }
 
 html, body{
-        height: 100vh;
+    height: 100vh;
+}
+
+@font-face{
+    font-family: bona nova;
+    src: url(../fontes/bona_nova/Bona\ Nova\ Regular.otf);
 }
 
 /*
@@ -20,15 +25,21 @@ html, body{
 nav {
     background-color: #ffd800;
     height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: right;
 }
 
-p#navFisicalc{
-    padding: 10px;
+h1#navFisicalc{
+    
     color: #fff;
-    font-family: bona nova;
+    font-family: "bona nova";
     font-size: 2em;
+    position: absolute;
+    right: 50px;
+    /*padding: 15px;
     text-align: right;
-    margin-right: 60px;
+    margin-right: 60px;*/
 }
 
 section#bloco{
