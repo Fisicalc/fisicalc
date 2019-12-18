@@ -105,12 +105,12 @@ div#formulas{
     height: 200px;
 }
 
-.btnFormulas{
+.btnCategorias{
     border: none;
     background-color: gray;
     color: white;
     height: 50px;
-    width: 115px;
+    width: 120px;
     padding: 5px;
     text-align: center;
     text-decoration: none;
