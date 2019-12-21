@@ -27,55 +27,61 @@
         </header>
     
         <!--Seção do Banner (adSense do topo)-->
-        <section class="adBanner">
+        <aside id="adBanner">
             <p>Banner</p>
-        </section>
+        </aside>
     
         <!--Seção dos banners laterais e bloco de calculos e seleção de fórmulas-->
-        <section id="bloco">
+        <main>
     
             <!--div do Banner lateral esquerdo-->
-            <div class="bannerLateral">Espaço para AdSense 1</div>
+            <aside id="bannerLateralEsquerdo" class="bannerLateral">Espaço para AdSense Esquerda</aside>
             
             <!--div do espaço para cálculos e fórmulas-->
-            <div id="principal">
+            <article id="principal">
                 <!--div do espaço para cáculos-->
-                <div class="calculos"></div>
+                <section id="calculos"></section>
     
-                <div id="ajuda">
+                <section id="ajuda">
                     <button id="btnAjuda">Ajuda</button>
-                </div>
+                </section>
     
                 <!--div dos botões das fórmulas-->
                 <div id="spcBtnFormulas">
-                    <button class="btnFormulas" id="btnCinematica">Cinemática</button>
-                    <button class="btnFormulas" id="btnDinamica">Dinâmica</button>
-                    <button class="btnFormulas" id="btnEletrica">Elétrica</button>
-                    <button class="btnFormulas" id="btnEletroestatica">Eletroestática</button>
-                    <button class="btnFormulas" id="btnEletromagnetismo">Eletromagnetismo</button>
-                    <button class="btnFormulas" id="btnEstatica">Estática</button>
-                    <button class="btnFormulas" id="btnGravitacao">Física dos Gases</button>
-                    <button class="btnFormulas" id="btnFisicaModerna">Física Moderna</button>
-                    <button class="btnFormulas" id="btnGravitacao">Gravitação</button>
-                    <button class="btnFormulas" id="btnHidrostatica">Hidrostática</button>
-                    <button class="btnFormulas" id="btnOptica">Óptica</button>
-                    <button class="btnFormulas" id="btnOndulacao">Ondulatória</button>
-                    <button class="btnFormulas" id="btnTermologia">Termologia</button>
+                    <button class="btnCategorias" id="btnCinematica">Cinemática</button>
+                    <button class="btnCategorias" id="btnDinamica">Dinâmica</button>
+                    <button class="btnCategorias" id="btnEletrica">Elétrica</button>
+                    <button class="btnCategorias" id="btnEletroestatica">Eletroestática</button>
+                    <button class="btnCategorias" id="btnEletromagnetismo">Eletromagnetismo</button>
+                    <button class="btnCategorias" id="btnEstatica">Estática</button>
+                    <button class="btnCategorias" id="btnGravitacao">Física dos Gases</button>
+                    <button class="btnCategorias" id="btnFisicaModerna">Física Moderna</button>
+                    <button class="btnCategorias" id="btnGravitacao">Gravitação</button>
+                    <button class="btnCategorias" id="btnHidrostatica">Hidrostática</button>
+                    <button class="btnCategorias" id="btnOptica">Óptica</button>
+                    <button class="btnCategorias" id="btnOndulacao">Ondulatória</button>
+                    <button class="btnCategorias" id="btnTermologia">Termologia</button>
                 </div>
     
                 <!-- div dos espaço para escolher as fórmulas-->
-                <div id="formulas"></div>
-            </div>
+                <div id="formulas">
+                    <div class="boxFormulas">
+                        <p class="nomeDaFormula">Função horária da posição: </p>    
+                        <button class="btnFormulas">s=s0 + v * t</button>
+                    </div>
+                    
+                    <hr>
+                </div>
+            </article>
             
             <!--div do Banner direito-->
-            <div class="bannerLateral">Espaço para AdSense 1</div>
-        </section>
-        
+            <aside id="bannerLateralDireito" class="bannerLateral">Espaço para AdSense Direito</aside>
+        </main> 
+
         <!--Rodapé-->
         <footer id="rodape">
-            <div ></div>
-        </footer>         
-
+            <p>--Rodapé--></p>
+        </footer>
     </div>
 
     <!--Script do Fisicalc-->
