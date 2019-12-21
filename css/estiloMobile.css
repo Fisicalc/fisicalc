@@ -32,10 +32,12 @@ div#spcBtnFormulas {
     flex-wrap: nowrap;
     overflow-x: scroll;
     margin-bottom: 10px;
+    justify-content: stretch;
+    align-items: stretch;
 
 }
 
-.btnFormulas{
+.btnCategorias{
     min-width: 125px;
     margin: 5px;
 }
@@ -86,6 +88,6 @@ p#navFisicalc{
 
 footer#rodape{
     background-color: #ccaa3f;
-    height: 200px;
+    min-height: 200px;
     margin-top: 15px;
 }

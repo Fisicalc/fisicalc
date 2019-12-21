@@ -14,124 +14,76 @@ html, body{
     src: url(../fontes/bona_nova/Bona\ Nova\ Regular.otf);
 }
 
-/*
 #container{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}*/
+    display: grid;
+    display: flexbox;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 10vh 10vh 65vh 15vh;
 
-nav {
-    background-color: #ffd800;
-    height: 70px;
+}
+
+header{
+    grid-column: 1/4;
+    grid-row: 1/1;
+    background-color:  #ffd800;
     display: flex;
     align-items: center;
-    text-align: right;
+    justify-content: flex-end;
+}
+
+nav{
+
 }
 
 h1#navFisicalc{
-    
     color: #fff;
     font-family: "bona nova";
-    font-size: 2em;
-    position: absolute;
-    right: 50px;
+    font-size: 2em; 
+    margin-right: 100px;
     /*padding: 15px;
     text-align: right;
     margin-right: 60px;*/
 }
 
-section#bloco{
-    padding-left: 20px;
-    padding-right: 20px;
+aside#adBanner{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+main{
+    grid-column: 1/4;
+    grid-row: 3/4;
     display: grid;
-    margin-top: 30px;
-    grid-template-columns: 1fr 6fr 1fr;
-    grid-gap: 10px
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
-#ajuda{
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+article#principal {
+    display: flexbox;
 }
 
-#btnAjuda{
-    background-color: #F3D670;
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    border: none;
-    font-family: bona nova;
-    font-size: 22px;
-    width: 400px;
-    height: 50px;
-    cursor: pointer;
- 
+aside#bannerLateralEsquerdo {
+    grid-column: 1/2;
 }
 
-.bannerLateral {
-    height: 10px;
-	margin: 5px;
-	text-align: center;
-	font-size: 1.5em;
+aside#bannerLateralDireito {
+    grid-column: 3/4;
 }
 
-.calculos {
+section#calculos {
+    grid-column: 2/3;
     height: 450px;
-    margin: 5px;
+    margin: 50px;
 	background: #fcffe8;
 	text-align: center;
     font-size: 1.5em;
     box-shadow: 3px 3px 5px grey;
+
 }
 
-div#spcBtnFormulas {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-div#formulas{
-    background-color:#BFE899;
-    border-style: solid;
-    border-color: #20C826;
-    height: 200px;
-}
-
-.btnCategorias{
-    border: none;
-    background-color: gray;
-    color: white;
-    height: 50px;
-    width: 120px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: bona nova;
-    font-size: 14px;
-    cursor: pointer;    
-    border-radius: 5px;
-    margin: 4px;
-}
-
-#btnCinematica{
-    background: #20C826;
-}
-
-#btnDinamica{
-    background: #EE1717;
-}
-
-footer#rodape{
+footer{
     background-color: #ccaa3f;
-    height: 200px;
-    margin-top: 15px;
+    grid-column: 1/4;
+    grid-row: 4/5;
+    display: flex;
+    align-self: auto;
 }
