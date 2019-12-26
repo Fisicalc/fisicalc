@@ -1,12 +1,20 @@
 @charset "utf-8";
 
-html, body, h1{
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    /*position: relative;*/
+}
+
+
+h1 {
     margin: 0px;
     padding: 0px;
 }
 
-html, body{
-    height: 100vh;
+aside#adBlocos{
+    display: none;
 }
 
 @font-face{
@@ -15,11 +23,10 @@ html, body{
 }
 
 #container{
+    min-height: 100%;
     display: grid;
-    display: flexbox;
-    grid-template-columns: 1fr 3fr 2fr;
-    grid-template-rows: 10vh 10vh 65vh 15vh;
-
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 10% 5% 65% 20%;
 }
 
 header{
@@ -29,17 +36,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-nav{
-
+    min-width: 100%;
+    min-height: 100%;
 }
 
 h1#navFisicalc{
     color: #fff;
     font-family: "bona nova";
     font-size: 2em; 
-    margin-right: 100px;
+    margin: 20px 100px 20px 0;
     /*padding: 15px;
     text-align: right;
     margin-right: 60px;*/
@@ -55,35 +60,103 @@ main{
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 3fr 1fr 2fr 2fr;
+    grid-row-gap: 10px;
+    
 }
 
-article#principal {
-    display: flexbox;
-}
 
 aside#bannerLateralEsquerdo {
     grid-column: 1/2;
+    grid-row: 1/5;
 }
 
 aside#bannerLateralDireito {
     grid-column: 3/4;
+    grid-row: 1/5;
 }
 
+
 section#calculos {
-    grid-column: 2/3;
-    height: 450px;
-    margin: 50px;
 	background: #fcffe8;
-	text-align: center;
+    text-align: center;
     font-size: 1.5em;
     box-shadow: 3px 3px 5px grey;
+}
 
+section#ajuda{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section#ajuda{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+button#btnAjuda{
+    background-color: #F3D670;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-family: bona nova;
+    font-size: 22px;
+    width: 400px;
+    height: 50px;
+    cursor: pointer;
+ 
+}
+
+div#spcBtnFormulas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1478)
+{
+    div#spcBtnFormulas
+    {
+        max-width: 200px;
+    }
+}
+
+.btnCategorias{
+    border: none;
+    background-color: gray;
+    color: white;
+    height: 50px;
+    width: 120px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: bona nova;
+    font-size: 14px;
+    cursor: pointer;    
+    border-radius: 5px;
+    margin: 4px;
+}
+
+
+div#formulas{
+    display: flex;
+    background-color:#BFE899;
+    border-style: solid;
+    border-color: #20C826;
 }
 
 footer{
+    bottom:0;
+    min-width: 100%;
+    min-height: 100%;
     background-color: #ccaa3f;
+    margin-top: 10px;
     grid-column: 1/4;
     grid-row: 4/5;
-    display: flex;
-    align-self: auto;
 }
