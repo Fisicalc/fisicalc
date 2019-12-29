@@ -60,15 +60,6 @@
                 <button class="btnCategorias" id="btnOndulacao">Ondulatória</button>
                 <button class="btnCategorias" id="btnTermologia">Termologia</button>
             </div>
-    
-                <!--
-            <div id="formulas">
-                <div class="boxFormulas">
-                    <p class="nomeDaFormula">Função horária da posição: </p>    
-                    <button class="btnFormulas">s=s0 + v * t</button>              
-                </div>
-            </div>
-            div dos espaço para escolher as fórmulas-->
             
             <!--div do Banner direito-->
             <aside id="bannerLateralDireito" class="bannerLateral">Espaço para AdSense Direito</aside>
@@ -77,9 +68,51 @@
         <aside id="adBlocos">adSenese de Blocos</aside>
 
         <!--Rodapé-->
-        <footer id="rodape">
-           
+        <footer id="rodape">   
         </footer>
+
+        <!--div dos espaço para escolher as fórmulas-->
+        <div id="cinematica" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Cinemática</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("cinematica");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("btnCinematica");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
     </div>
 
     <!--Script do Fisicalc-->
