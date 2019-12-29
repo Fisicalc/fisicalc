@@ -22,11 +22,11 @@ aside#adBlocos{
     src: url(../fontes/bona_nova/Bona\ Nova\ Regular.otf);
 }
 
-#container{
+div#container{
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 10% 5% 65% 20%;
+    grid-template-rows: 12.5% 100px 65% 22.5%;
 }
 
 header{
@@ -59,25 +59,38 @@ main{
     grid-column: 1/4;
     grid-row: 3/4;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 3fr 1fr 2fr 2fr;
-    grid-row-gap: 10px;
-    
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 4.5fr 1fr 2fr;
+    grid-row-gap: 10px;   
 }
+
+@media screen and (min-width: 992px){
+    main{
+        /*grid-column: 1/4;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;*/
+        grid-template-rows: 6fr 1fr 2fr;
+        /*grid-row-gap: 10px;   */
+    }
+}
+
 
 
 aside#bannerLateralEsquerdo {
     grid-column: 1/2;
-    grid-row: 1/5;
+    grid-row: 1/2;
 }
 
 aside#bannerLateralDireito {
     grid-column: 3/4;
-    grid-row: 1/5;
+    grid-row: 1/2;
 }
 
 
 section#calculos {
+    grid-column: 2/3;
+    grid-row: 1/2;
 	background: #fcffe8;
     text-align: center;
     font-size: 1.5em;
@@ -85,6 +98,8 @@ section#calculos {
 }
 
 section#ajuda{
+    grid-row: 2/3;
+    grid-column: 2/3;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -112,10 +127,19 @@ button#btnAjuda{
 }
 
 div#spcBtnFormulas {
+    grid-row: 3/4;
+    grid-column: 1/4;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 992px){
+    div#spcBtnFormulas {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
 }
 
 @media screen and (max-width: 1478)

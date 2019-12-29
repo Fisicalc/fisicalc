@@ -6,7 +6,7 @@ aside#bannerLateralEsquerdo, aside#bannerLateralDireito, div#formulas {
 
 div#container{
     display: grid;
-    grid-template-rows: 10% 5% 50% 20% 15%;
+    grid-template-rows: 10% 60px 55% 20% 15%;
     grid-template-columns: 1fr;
     grid-gap: 10px;
 }
@@ -23,14 +23,12 @@ aside#adBanner{
     grid-column: 2/3;
 }
 
-#calculos{
-    margin: 0px 15px 0px;
-}
+
 
 main{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 1fr ;
+    grid-template-columns: 0fr 1fr 0fr;
+    grid-template-rows: 1fr 3fr 1fr;
 }
 
 div#spcBtnFormulas {
@@ -39,13 +37,24 @@ div#spcBtnFormulas {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    margin-bottom: 10px;
+    overflow-y: hidden;
+    padding: 0px 10px 0px;
     justify-content: stretch;
-    align-items: stretch;
+    align-items: center;
 
 }
 
+section#calculos{
+    grid-row: 2/3;
+    margin: 0px 15px 0px;
+}
+
+section#ajuda{
+    grid-row: 3/4;
+}
+
 .btnCategorias{
+    grid-row: 3/4;
     min-width: 125px;
     margin: 5px;
 }
