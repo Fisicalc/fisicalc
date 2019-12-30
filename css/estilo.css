@@ -61,7 +61,8 @@ main{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 4.5fr 1fr 2fr;
-    grid-row-gap: 10px;   
+    grid-row-gap: 10px;
+
 }
 
 @media screen and (min-width: 992px){
@@ -72,12 +73,13 @@ main{
         grid-template-columns: 1fr 4fr 1fr;*/
         grid-template-rows: 6fr 1fr 120px 1fr;
         /*grid-row-gap: 10px;   */
+        margin-bottom: 40px;
     }
 }
 
 @media screen and (min-width: 1336px){
     main{
-        grid-template-rows: 6fr 1fr 120px 0.5fr;       
+        grid-template-rows: 6fr 1fr 120px 1%;       
     }
 }
 
@@ -160,7 +162,7 @@ div#spcBtnFormulas {
     background-color: gray;
     color: white;
     height: 50px;
-    width: 120px;
+    width: 130px;
     padding: 5px;
     text-align: center;
     text-decoration: none;
@@ -172,6 +174,9 @@ div#spcBtnFormulas {
     margin: 4px;
 }
 
+button#btnCinematica{
+    background-color: #20C826;
+}
 
 /*div#formulas{
     display: flex;
@@ -210,7 +215,7 @@ footer{
     margin: auto;
     padding: 0px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2),0 6px 20px rgb(0,0,0,0.19);
     -webkit-animation-name: animateTop;
     -webkit-animation-duration: 0.4s;
@@ -243,7 +248,7 @@ footer{
 
 .modalHeader {
     padding: 2px 16px;
-    background-color:  #5cb85c;
+    background-color: #20C826;
     color: white;
 }
 
