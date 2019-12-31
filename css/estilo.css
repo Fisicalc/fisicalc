@@ -159,7 +159,6 @@ div#spcBtnFormulas {
 
 .btnCategorias{
     border: none;
-    background-color: gray;
     color: white;
     height: 50px;
     width: 130px;
@@ -178,12 +177,53 @@ button#btnCinematica{
     background-color: #20C826;
 }
 
-/*div#formulas{
-    display: flex;
-    background-color:#BFE899;
-    border-style: solid;
-    border-color: #20C826;
-}*/
+button#btnDinamica{
+    background-color: #EE1717;
+}
+
+button#btnEletrica {
+    background-color: rgb(247, 200, 12);
+}
+
+button#btnEletrostatica{
+    background-color: 	rgb(92, 51, 204);
+}   
+
+button#btnEletromagnetismo{
+    background-color: #695179;
+}
+
+button#btnEstatica{
+    background-color: rgb(1, 189, 95);
+}
+
+button#btnFisicaDosGases{
+    background-color: #6699CC;
+}
+
+button#btnFisicaModerna{
+    background-color: #CC33FF;
+}
+
+button#btnGravitacao{
+    background-color: #3333CC;
+}
+
+button#btnHidrostatica{
+    background-color: #3399FF;
+}
+
+button#btnOndulatoria{
+    background-color: #9966CC;
+}
+
+button#btnOptica {
+    background-color: slategray;
+}
+
+button#btnTermologia{
+    background-color: #FF6600;
+}
 
 footer{
     bottom:0;
