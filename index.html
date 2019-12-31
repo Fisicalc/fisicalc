@@ -49,10 +49,10 @@
                 <button class="btnCategorias" id="btnCinematica">Cinemática</button>
                 <button class="btnCategorias" id="btnDinamica">Dinâmica</button>
                 <button class="btnCategorias" id="btnEletrica">Elétrica</button>
-                <button class="btnCategorias" id="btnEletroestatica">Eletroestática</button>
+                <button class="btnCategorias" id="btnEletrostatica">Eletrostática</button>
                 <button class="btnCategorias" id="btnEletromagnetismo">Eletromagnetismo</button>
                 <button class="btnCategorias" id="btnEstatica">Estática</button>
-                <button class="btnCategorias" id="btnGravitacao">Física dos Gases</button>
+                <button class="btnCategorias" id="btnFisicaDosGases">Física dos Gases</button>
                 <button class="btnCategorias" id="btnFisicaModerna">Física Moderna</button>
                 <button class="btnCategorias" id="btnGravitacao">Gravitação</button>
                 <button class="btnCategorias" id="btnHidrostatica">Hidrostática</button>
@@ -71,7 +71,7 @@
         <footer id="rodape">   
         </footer>
 
-        <!--div dos espaço para escolher as fórmulas-->
+        <!--div dos espaços para escolher as fórmulas-->
         <div id="cinematica" class="modal">
             <div class="modalContent">
                 <div class="modalHeader">
@@ -86,36 +86,178 @@
             </div>            
         </div>
 
-        <script>
-            // Get the modal
-            var modal = document.getElementById("cinematica");
-            
-            // Get the button that opens the modal
-            var btn = document.getElementById("btnCinematica");
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks the button, open the modal 
-            btn.onclick = function() {
-              modal.style.display = "block";
-            }
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-            </script>
+        <div id="dinamica" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Dinâmica</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="eletrica" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Elétrica</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="eletrostatica" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Eletrostática</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="eletromagnetismo" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Eletromagnetismo</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="estatica" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Estática</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="fisicaModerna" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Física Moderna</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="gravitacao" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Gravitação</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="fisicaDosGases" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Física dos Gases</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="hidrostatica" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Hidrostática</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="optica" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Óptica</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="ondulatoria" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Ondulatória</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
+        <div id="termologia" class="modal">
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Termologia</h2>
+                </div>
+                
+                <div class="modalBody">
+                    <p class="nomeDaFormula">Função horária da posição: </p>
+                    <button class="btnFormulas">s=s0 + v * t</button>              
+                </div>
+            </div>            
+        </div>
+
     </div>
 
     <!--Script do Fisicalc-->
+    <script src="js/modais.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
 </body>
 </html>
