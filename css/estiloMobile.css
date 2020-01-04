@@ -68,3 +68,7 @@ aside#adBlocos{
 footer {
     grid-row: 5/6;
 }
+
+.modalContent {
+    width: 95%;
+}

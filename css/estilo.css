@@ -225,6 +225,8 @@ button#btnTermologia{
     background-color: #FF6600;
 }
 
+  
+
 footer{
     bottom:0;
     min-width: 100%;
@@ -295,4 +297,36 @@ footer{
 .modalBody{
     padding: 2px 16px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modalBody > a {
+    display: inline-table;
+    background-color: #20C826;
+    box-shadow: 0 5px 0 #128b16;
+    border-radius: 0.3em;
+    color: white;
+    padding: 0.7em 2em;
+    /*margin-top: 0.8em;*/
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.modalBody > a:hover {
+    background-color: #20C826;
+}
+  
+.modalBody > a:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+.modalBody > p {
+    padding-top: 0.3em;
+    font-size: 1em;
+    font-family: bona nova;
 }
