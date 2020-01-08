@@ -46,6 +46,8 @@
     
             <!--div dos botões das fórmulas-->
             <div id="spcBtnFormulas">
+                
+                <!--Listener mudarModais.js-->
                 <button class="btnCategorias" id="btnCinematica">Cinemática</button>
                 <button class="btnCategorias" id="btnDinamica">Dinâmica</button>
                 <button class="btnCategorias" id="btnEletrica">Elétrica</button>
@@ -60,6 +62,8 @@
                 <button class="btnCategorias" id="btnOndulatoria">Ondulatória</button>
                 <button class="btnCategorias" id="btnTermologia">Termologia</button>
             </div>
+
+           
             
             <!--div do Banner direito-->
             <aside id="bannerLateralDireito" class="bannerLateral">Espaço para AdSense Direito</aside>
@@ -72,192 +76,28 @@
         </footer>
 
         <!--div dos espaços para escolher as fórmulas-->
-        <div id="cinematica" class="modal">
-            <div class="modalContent">
+        <div id="modal" class="modal">
+            <div class="modalContent" id="modalContent">
                 <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Cinemática</h2>
+                    <span id="close" class="close">&times;</span>
+                    <h2 id="tituloModal"></h2>
                 </div>
                 
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a>s=s0 + v * t</a>              
+                <div id="modalBody" class="modalBody">
+                    <div>
+                        <p class="nomeDaFormula">Função horária da posição: </p>
+                        <a>s=s0 + v * t</a>
+                    </div>
                 </div>
             </div>            
         </div>
-
-        <div id="dinamica" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Dinâmica</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="eletrica" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Elétrica</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="eletrostatica" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Eletrostática</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="eletromagnetismo" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Eletromagnetismo</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="estatica" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Estática</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="fisicaModerna" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Física Moderna</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="gravitacao" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Gravitação</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="fisicaDosGases" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Física dos Gases</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="hidrostatica" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Hidrostática</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="optica" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Óptica</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="ondulatoria" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Ondulatória</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
-        <div id="termologia" class="modal">
-            <div class="modalContent">
-                <div class="modalHeader">
-                    <span class="close">&times;</span>
-                    <h2>Termologia</h2>
-                </div>
-                
-                <div class="modalBody">
-                    <p class="nomeDaFormula">Função horária da posição: </p>
-                    <a class="btnFormulas">s=s0 + v * t</a>              
-                </div>
-            </div>            
-        </div>
-
     </div>
 
     <!--Script do Fisicalc-->
-    <script src="js/modais.js"></script>
+    <script src="js/objCinematica.js"></script>
+    <script src="js/objDinamica.js"></script>
+    <script src="js/criarModais.js"></script>
+    <script src="js/mudarModal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
 </body>
 </html>
