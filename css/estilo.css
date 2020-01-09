@@ -252,6 +252,7 @@ footer{
     padding: 0px;
     border: 1px solid #888;
     width: 50%;
+    max-height: 100%;
     box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2),0 6px 20px rgb(0,0,0,0.19);
     -webkit-animation-name: animateTop;
     -webkit-animation-duration: 0.4s;
@@ -259,13 +260,13 @@ footer{
     animation-duration: 0.4s;
 }
 
-@media screen and (min-height: 1450px)
+/* @media screen and (min-height: 1450px)
     {
         .modalContent {
             max-height: 1450px;
         }
     }
-
+*/
 @-webkit-keyframes animateTop {
     from {top: -300px; opacity:0}
     to {top: 5%; opacity: 1;}
@@ -315,7 +316,6 @@ footer{
     border-radius: 0.3em;
     color: white;
     padding: 0.7em 2em;
-    /*margin-top: 0.8em;*/
     position: relative;
     text-decoration: none;
     font-size: 1em;
