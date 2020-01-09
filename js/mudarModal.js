@@ -5,8 +5,8 @@ function mudarModal() {
 
         //alert(document.body.clientHeight)
 
-        let alturaModalContent = document.body.clientHeight -150;
-        let alturaModalBody = document.body.clientHeight -250;
+        let alturaModalContent = (document.body.clientHeight - 150);
+        let alturaModalBody = (document.body.clientHeight - 250);
 
 
         document.getElementById('modalContent').style.height = alturaModalContent + 'px';
