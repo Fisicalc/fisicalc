@@ -30,14 +30,29 @@ div#container{
 }
 
 header{
-    grid-column: 1/4;
-    grid-row: 1/1;
+    
     background-color:  #ffd800;
+    background-image: url("../img/header/header2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     min-width: 100%;
     min-height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/1;
+}
+
+nav {
+    margin: 25px;
+}
+
+nav > img {
+    min-width: 124px;
+    min-height: 92px;
+    width: 100%;
+    height: auto;
 }
 
 h1#navFisicalc{
@@ -296,7 +311,7 @@ footer{
     color: white;
 }
 
-.modalBody{
+.modalBody {
     padding: 2px 16px;
     /*margin-bottom: 10px;
     max-height: 500px;*/
@@ -306,33 +321,35 @@ footer{
 .modalBody > div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
 }
 
-.modalBody > div > a {
+.modalBody > div > div > a {
+    display: flex;
     background-color: #20C826;
     box-shadow: 0 5px 0 #128b16;
     border-radius: 0.3em;
     color: white;
     padding: 0.7em 2em;
+    margin: 0.5em 0em;
     position: relative;
     text-decoration: none;
     font-size: 1em;
     cursor: pointer;
 }
 
-.modalBody > div > a:hover {
+.modalBody > div > div > a:hover {
     background-color: #20C826;
 }
   
-.modalBody > div > a:active {
+.modalBody > div > div > a:active {
     box-shadow: none;
     top: 5px;
 }
 
 .modalBody > div > p {
     padding-top: 0.3em;
+    width: 220px;
     font-size: 1em;
     font-family: bona nova;
 }

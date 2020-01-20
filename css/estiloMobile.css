@@ -19,6 +19,13 @@ header {
     min-width: 100%;
 }
 
+nav > img {
+    min-width: auto;
+    min-height: auto;
+    width: auto;
+    max-width: 100%;
+}
+
 aside#adBanner{
     grid-column: 2/3;
 }
